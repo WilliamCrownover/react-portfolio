@@ -3,7 +3,7 @@ export default function Footer() {
 
 	return (
 		<footer>
-			<h3>footer</h3>
+			<h3>Footer</h3>
 		</footer>
 	);
 }
