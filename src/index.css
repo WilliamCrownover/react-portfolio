@@ -115,6 +115,25 @@ p {
   text-align: justify;
 }
 
+.page-section a {
+  color: var(--iceyWaters);
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  
+}
+
+.flex-lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-lists li {
+  margin-bottom: 10px;
+}
+
 footer{
   display: flex;
   justify-content: center;
