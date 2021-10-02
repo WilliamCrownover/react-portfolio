@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
@@ -27,6 +28,7 @@ export default function PortfolioPages() {
 		<div>
 			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
 			{renderPage()}
+			<Footer />
 		</div>
 	);
 }
