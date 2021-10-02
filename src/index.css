@@ -2,3 +2,78 @@
   font-family: 'Libre Franklin', sans-serif;
   box-sizing: border-box;
 }
+
+:root {
+  --rustBrown: #7e3a31;
+  --rockLight: #a8927f;
+  --cloudWhite: #f2f4f1;
+  --coalBlack: #1b222f;
+  --cloudBlue: #a6adbd;
+  --iceyWaters: #4e5460;
+  --shadowAnimateSpeed: .6s;
+}
+
+html {
+  background-color: var(--cloudWhite);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--rustBrown);
+  box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+}
+
+h1 {
+  margin-left: 30px;
+  color: var(--cloudWhite);
+  font-family: 'Kanit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0 15px;
+  color: var(--cloudWhite);
+  padding: 15px;
+  border-radius: 5px;
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.nav-link:hover {
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 33%), 
+    -3px -3px 6px rgb(255 255 255 / 25%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.nav-link:active {
+  box-shadow: inset 6px 6px 12px rgb(0 0 0 / 50%), 
+    inset -6px -6px 12px rgb(255 255 255 / 5%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.active {
+  box-shadow: 0px 0px 0px rgb(0 0 0 / 0%),
+    0px 0px 0px rgb(0 0 0 / 0%),
+    inset 6px 6px 12px rgb(0 0 0 / 50%), 
+    inset -6px -6px 12px rgb(255 255 255 / 5%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.active:hover {
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 33%), 
+    -3px -3px 6px rgb(255 255 255 / 25%),
+    inset 0px 0px 0px rgb(0 0 0 / 0%),
+    inset 0px 0px 0px rgb(0 0 0 / 0%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
