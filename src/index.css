@@ -77,3 +77,40 @@ li {
     inset 0px 0px 0px rgb(0 0 0 / 0%);
   transition: box-shadow var(--shadowAnimateSpeed);
 }
+
+.page-section {
+  margin: 50px;
+}
+
+h2 {
+  color: var(--coalBlack);
+  font-family: 'Kanit', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.lines {
+  border-left: 10px solid var(--iceyWaters);
+  border-bottom: 3px solid var(--iceyWaters);
+}
+
+.about-me-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 33%), 
+    -3px -3px 6px rgb(255 255 255 / 100%);
+}
+
+p {
+  margin: 0;
+  margin-left: 30px;
+  line-height: 1.8;
+  text-align: justify;
+}
