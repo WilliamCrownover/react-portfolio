@@ -18,13 +18,16 @@ const pageNames = [
 	}
 ];
 
-export default function Navigation() {
+export default function Navigation({ currentPage, handlePageChange }) {
 
 	return (
 		<ul>
 			{pageNames.map((page) => (
 				<li key={page.id}>
-					<a href={"#" + page.name}>
+					<a 
+						href={"#" + page.name}
+						onClick={() => handlePageChange(page.name)}
+					>
 						{page.name}
 					</a>
 				</li>
