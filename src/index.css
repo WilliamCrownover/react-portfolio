@@ -79,7 +79,9 @@ li {
 }
 
 .page-section {
-  margin: 50px;
+  margin: 50px auto;
+  padding: 0 50px;
+  max-width: 1000px;
 }
 
 h2 {
@@ -258,4 +260,63 @@ footer a {
 footer a:hover {
   color: var(--cloudBlue);
   transition: color var(--shadowAnimateSpeed);
+}
+
+/* Media Queries */
+@media screen and (max-width: 860px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    margin: .67em auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-tabs {
+    margin: 10px auto;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-flex {
+    display: block;
+  }
+
+  .nav-link {
+    margin: 0 5px;
+    font-size: .7rem;
+    padding: 10px;
+  }
+
+  .page-section {
+    padding: 0 20px;
+  }
+
+  .profile-pic {
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .project-card {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .form textarea,
+  .form input {
+    width: 100%;
+  }
+
+  .flex-lists {
+    display: block;
+  }
 }
