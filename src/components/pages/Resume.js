@@ -9,10 +9,10 @@ export default function Resume() {
 			<a href="https://drive.google.com/file/d/1stCDKVvpGVHaHWtrjFR0GRNn3QJp89m_/view?usp=sharing" target="_blank" rel="noreferrer">
 				<h3>Downloadable PDF <span><FontAwesomeIcon icon={faFile} size="1x" /></span></h3>
 			</a>
-			<div class="flex-lists">
+			<div className="flex-lists">
                 <div>
                     <h4>Front-end Proficiencies</h4>
-                    <ul class="proficient-list">
+                    <ul className="proficient-list">
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
@@ -23,7 +23,7 @@ export default function Resume() {
                 </div>
                 <div>
                     <h4>Back-end Proficiencies</h4>
-                    <ul class="proficient-list">
+                    <ul className="proficient-list">
                         <li>Node.js</li>
                         <li>Express.js</li>
                         <li>MySQL2</li>
