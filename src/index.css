@@ -193,6 +193,34 @@ img {
   height:200px;
 }
 
+h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+button {
+  margin-top: 20px;
+  background-color: var(--rustBrown);
+  color: var(--cloudWhite);
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 33%), 
+    -3px -3px 6px rgb(255 255 255 / 100%);
+}
+
+button:disabled {
+  background-color: var(--cloudBlue);
+  box-shadow: none;
+}
+
+button:active {
+  box-shadow: none;
+  box-shadow: 0px 0px 0px rgb(0 0 0 / 0%),
+    0px 0px 0px rgb(0 0 0 / 0%),
+    inset 6px 6px 12px rgb(0 0 0 / 50%), 
+    inset -6px -6px 12px rgb(255 255 255 / 5%);
+}
+
 .page-section a {
   color: var(--iceyWaters);
   text-decoration: none;
