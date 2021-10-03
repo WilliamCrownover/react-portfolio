@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFile } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile } from '@fortawesome/free-regular-svg-icons';
 
 export default function Resume() {
 
@@ -10,29 +10,29 @@ export default function Resume() {
 				<h3>Downloadable PDF <span><FontAwesomeIcon icon={faFile} size="1x" /></span></h3>
 			</a>
 			<div className="flex-lists">
-                <div>
-                    <h4>Front-end Proficiencies</h4>
-                    <ul className="proficient-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Handlebars.js</li>
-                        <li>React.js</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Back-end Proficiencies</h4>
-                    <ul className="proficient-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MySQL2</li>
-                        <li>Sequelize</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose.js</li>
-                    </ul>
-                </div>
-            </div>
+				<div>
+					<h4>Front-end Proficiencies</h4>
+					<ul className="proficient-list">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Handlebars.js</li>
+						<li>React.js</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Back-end Proficiencies</h4>
+					<ul className="proficient-list">
+						<li>Node.js</li>
+						<li>Express.js</li>
+						<li>MySQL2</li>
+						<li>Sequelize</li>
+						<li>MongoDB</li>
+						<li>Mongoose.js</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	);
 }

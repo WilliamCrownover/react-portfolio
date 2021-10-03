@@ -2,37 +2,37 @@
 const pageNames = [
 	{
 		id: 1,
-		name: "About Me"
+		name: 'About Me'
 	},
 	{
 		id: 2,
-		name: "Portfolio"
+		name: 'Portfolio'
 	},
 	{
 		id: 3,
-		name: "Contact"
+		name: 'Contact'
 	},
 	{
 		id: 4,
-		name: "Resume"
+		name: 'Resume'
 	}
 ];
 
-export default function Navigation({ currentPage, handlePageChange }) {
+export default function Navigation( { currentPage, handlePageChange } ) {
 
 	return (
 		<ul className="nav-tabs">
-			{pageNames.map((page) => (
+			{pageNames.map( ( page ) => (
 				<li key={page.id}>
-					<a 
-						href={"#" + page.name}
-						onClick={() => handlePageChange(page.name)}
-						className={currentPage === page.name ? "nav-link active" : "nav-link"}
+					<a
+						href={'#' + page.name}
+						onClick={() => handlePageChange( page.name )}
+						className={currentPage === page.name ? 'nav-link active' : 'nav-link'}
 					>
 						{page.name}
 					</a>
 				</li>
-			))}
+			) )}
 		</ul>
 	);
 }

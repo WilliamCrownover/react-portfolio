@@ -1,11 +1,11 @@
 
-export default function Project({title, imageName, liveURL, repoURL}) {
+export default function Project( { title, imageName, liveURL, repoURL } ) {
 
 	return (
 		<div className="project-card">
 			<div className="project-image-btns">
 				<h4>{title}</h4>
-				<img src={"/assets/"+imageName} alt="Project"/>
+				<img src={'/assets/'+imageName} alt="Project"/>
 				<div className="project-btn-wrapper">
 					<a className="btn-left" href={liveURL} target="_blank" rel="noreferrer"
 						alt="Go to Shelf-Life Webpage">Live Site</a>

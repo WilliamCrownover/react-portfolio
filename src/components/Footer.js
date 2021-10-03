@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import { faVimeo } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faVimeo } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
 

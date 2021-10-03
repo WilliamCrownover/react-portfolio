@@ -1,28 +1,28 @@
-import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import AboutMe from "./pages/AboutMe";
-import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
+import { useState } from 'react';
+import Footer from './Footer';
+import Header from './Header';
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
 export default function PortfolioPages() {
-	const [currentPage, setCurrentPage] = useState("About Me");
+	const [currentPage, setCurrentPage] = useState( 'About Me' );
 
 	const renderPage = () => {
-		switch(currentPage) {
-			case "Portfolio":
-				return <Portfolio />;
-			case "Contact":
-				return <Contact />;
-			case "Resume":
-				return <Resume />;
-			default:
-				return <AboutMe />
+		switch( currentPage ) {
+		case 'Portfolio':
+			return <Portfolio />;
+		case 'Contact':
+			return <Contact />;
+		case 'Resume':
+			return <Resume />;
+		default:
+			return <AboutMe />;
 		}
 	};
 
-	const handlePageChange = (page) => setCurrentPage(page);
+	const handlePageChange = ( page ) => setCurrentPage( page );
 
 	return (
 		<div>

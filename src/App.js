@@ -1,9 +1,9 @@
-import PortfolioPages from "./components/PortfolioPages";
+import PortfolioPages from './components/PortfolioPages';
 
 function App() {
-  return (
-    <PortfolioPages/>
-  );
+	return (
+		<PortfolioPages/>
+	);
 }
 
 export default App;

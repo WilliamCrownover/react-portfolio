@@ -6,7 +6,7 @@ export default function AboutMe() {
 			<h2 className="lines">About Me</h2>
 			<div className="about-me-flex">
 				<img className="profile-pic" src="/assets/profilepic.jpg" alt="William Crownover"/>
-				<p style={{textIndent: "40px"}}>
+				<p style={{ textIndent: '40px' }}>
 					Full-stack web developer applying digital media production degree and freelance graphic design experience
 					to build engaging and interactive data visualization websites. Recently certified by the University of
 					Washington in full stack web development. Respectable team player who is a knowledgeable resource and

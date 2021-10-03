@@ -1,6 +1,6 @@
-import Navigation from "./Navigation";
+import Navigation from './Navigation';
 
-export default function Header({ currentPage, handlePageChange }) {
+export default function Header( { currentPage, handlePageChange } ) {
 
 	return (
 		<header>
