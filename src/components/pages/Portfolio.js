@@ -14,6 +14,34 @@ const allProjectInfo = [
 		imageName: "usvr.jpg",
 		liveURL: "https://williamcrownover.github.io/us-voter-representatives/",
 		repoURL: "https://github.com/WilliamCrownover/us-voter-representatives"
+	},
+	{
+		id: 3,
+		title: "Weather Forecast Dashboard",
+		imageName: "wfd.jpg",
+		liveURL: "https://williamcrownover.github.io/weather-forecast-dashboard/",
+		repoURL: "https://github.com/WilliamCrownover/weather-forecast-dashboard"
+	},
+	{
+		id: 4,
+		title: "Tech Blog Forum",
+		imageName: "tbf.jpg",
+		liveURL: "https://tech-blog-forum-mvc.herokuapp.com/",
+		repoURL: "https://github.com/WilliamCrownover/tech-blog-forum"
+	},
+	{
+		id: 5,
+		title: "Employee CMS",
+		imageName: "ecms.jpg",
+		liveURL: "https://github.com/WilliamCrownover/employee-content-management-system",
+		repoURL: "https://github.com/WilliamCrownover/employee-content-management-system"
+	},
+	{
+		id: 6,
+		title: "JavaScript Quiz Game",
+		imageName: "jsq.jpg",
+		liveURL: "https://williamcrownover.github.io/javascript-coding-quiz/",
+		repoURL: "https://github.com/WilliamCrownover/javascript-coding-quiz"
 	}
 ]
 

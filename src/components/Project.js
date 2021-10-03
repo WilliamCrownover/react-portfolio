@@ -1,6 +1,5 @@
 
 export default function Project({title, imageName, liveURL, repoURL}) {
-	console.log(title);
 
 	return (
 		<div className="project-card">

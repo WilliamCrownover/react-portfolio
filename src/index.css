@@ -115,14 +115,26 @@ p {
   text-align: justify;
 }
 
+h4 {
+  color: var(--coalBlack);
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .all-projects-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .project-card {
   margin-bottom: 70px;
-  flex: 0 1 45%;
+  flex: 0 0 45%;
 }
 
 .project-image-btns {
