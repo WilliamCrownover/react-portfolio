@@ -115,9 +115,61 @@ p {
   text-align: justify;
 }
 
+.all-projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  margin-bottom: 70px;
+  flex: 0 1 45%;
+}
+
+.project-image-btns {
+  flex: 0 1 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.project-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-left,
+.btn-right {
+  flex: 1 1 50%;
+  text-align: center;
+  background-color: var(--iceyWaters);
+  padding: 10px 0;
+  color: var(--cloudWhite);
+  text-decoration: none;
+}
+
+.btn-left {
+  border-radius: 8px 0 0 8px;
+  border-right: solid 3px var(--coalBlack);
+}
+
+.btn-right {
+  border-radius: 0 8px 8px 0;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: var(--coalBlack);
+}
+
 .page-section a {
   color: var(--iceyWaters);
   text-decoration: none;
+}
+
+.project-btn-wrapper a {
+  color: var(--cloudWhite);
 }
 
 h3 {
