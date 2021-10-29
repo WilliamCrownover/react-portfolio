@@ -1,19 +1,24 @@
+import { Link } from "react-router-dom";
 
 const pageNames = [
 	{
 		id: 1,
-		name: 'About Me'
+		link: '/react-portfolio/about',
+		name: 'AboutMe'
 	},
 	{
 		id: 2,
-		name: 'Portfolio'
+		link: '/react-portfolio/projects',
+		name: 'Projects'
 	},
 	{
 		id: 3,
+		link: '/react-portfolio/contact',
 		name: 'Contact'
 	},
 	{
 		id: 4,
+		link: '/react-portfolio/resume',
 		name: 'Resume'
 	}
 ];
@@ -24,13 +29,13 @@ export default function Navigation( { currentPage, handlePageChange } ) {
 		<ul className="nav-tabs">
 			{pageNames.map( ( page ) => (
 				<li key={page.id}>
-					<a
-						href={'#' + page.name}
-						onClick={() => handlePageChange( page.name )}
-						className={currentPage === page.name ? 'nav-link active' : 'nav-link'}
+					<Link
+						to={page.link}
+						// onClick={() => handlePageChange( page.name )}
+						// className={currentPage === page.name ? 'nav-link active' : 'nav-link'}
 					>
 						{page.name}
-					</a>
+					</Link>
 				</li>
 			) )}
 		</ul>
