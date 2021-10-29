@@ -1,8 +1,11 @@
 import PortfolioPages from './pages/PortfolioPages';
+import { PortfolioProvider } from './utils/GlobalState';
 
 function App() {
 	return (
-		<PortfolioPages/>
+		<PortfolioProvider>
+			<PortfolioPages/>
+		</PortfolioProvider>
 	);
 }
 

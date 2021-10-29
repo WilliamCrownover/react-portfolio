@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { UPDATE_PAGE } from "../utils/actions";
+import { usePortfolioContext } from "../utils/GlobalState";
 
 const pageNames = [
 	{
@@ -24,6 +26,8 @@ const pageNames = [
 ];
 
 export default function Navigation( { currentPage, handlePageChange } ) {
+	const [state, dispatch] = usePortfolioContext();
+	console.log(state.currentPage);
 
 	return (
 		<ul className="nav-tabs">
@@ -31,8 +35,8 @@ export default function Navigation( { currentPage, handlePageChange } ) {
 				<li key={page.id}>
 					<Link
 						to={page.link}
-						// onClick={() => handlePageChange( page.name )}
-						// className={currentPage === page.name ? 'nav-link active' : 'nav-link'}
+						onClick={() => {dispatch({ type: UPDATE_PAGE, currentPage: page.name})}}
+						className={state.currentPage === page.name ? 'nav-link active' : 'nav-link'}
 					>
 						{page.name}
 					</Link>
