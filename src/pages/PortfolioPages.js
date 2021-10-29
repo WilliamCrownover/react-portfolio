@@ -1,34 +1,45 @@
-import { useState } from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+// import { useState } from 'react';
+
+// import Footer from '../components/Footer';
+// import Header from '../components/Header';
+
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 
 export default function PortfolioPages() {
-	const [currentPage, setCurrentPage] = useState( 'About Me' );
+	// const [currentPage, setCurrentPage] = useState( 'About Me' );
 
-	const renderPage = () => {
-		switch( currentPage ) {
-		case 'Portfolio':
-			return <Portfolio />;
-		case 'Contact':
-			return <Contact />;
-		case 'Resume':
-			return <Resume />;
-		default:
-			return <AboutMe />;
-		}
-	};
+	// const renderPage = () => {
+	// 	switch( currentPage ) {
+	// 	case 'Portfolio':
+	// 		return <Portfolio />;
+	// 	case 'Contact':
+	// 		return <Contact />;
+	// 	case 'Resume':
+	// 		return <Resume />;
+	// 	default:
+	// 		return <AboutMe />;
+	// 	}
+	// };
 
-	const handlePageChange = ( page ) => setCurrentPage( page );
+	// const handlePageChange = ( page ) => setCurrentPage( page );
 
 	return (
-		<div>
-			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
+		<Router>
+			<Switch>
+				<Route exact path='/react-portfolio/about' component={AboutMe} />
+				<Route exact path='/react-portfolio/portfolio' component={Portfolio} />
+				<Route exact path='/react-portfolio/contact' component={Contact} />
+				<Route exact path='/react-portfolio/resume' component={Resume} />
+				<Route path='/' component={AboutMe} />
+			</Switch>
+			{/* <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 			{renderPage()}
-			<Footer />
-		</div>
+			<Footer /> */}
+		</Router>
 	);
 }
