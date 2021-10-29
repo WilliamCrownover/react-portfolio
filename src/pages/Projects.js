@@ -45,7 +45,7 @@ const allProjectInfo = [
 	}
 ];
 
-export default function Portfolio() {
+export default function Projects() {
 
 	return (
 		<div className="page-section">
