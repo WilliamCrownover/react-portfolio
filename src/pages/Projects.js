@@ -1,3 +1,4 @@
+import Header from '../components/Header';
 import Project from '../components/Project';
 
 const allProjectInfo = [
@@ -48,18 +49,21 @@ const allProjectInfo = [
 export default function Projects() {
 
 	return (
-		<div className="page-section">
-			<h2 className="lines">Portfolio</h2>
-			<div className="all-projects-container">
-				{allProjectInfo.map( ( projectInfo ) => (
-					<Project key={projectInfo.id}
-						title={projectInfo.title}
-						imageName={projectInfo.imageName}
-						liveURL={projectInfo.liveURL}
-						repoURL={projectInfo.repoURL}
-					/>
-				) )}
+		<>
+			<Header/>
+			<div className="page-section">
+				<h2 className="lines">Portfolio</h2>
+				<div className="all-projects-container">
+					{allProjectInfo.map( ( projectInfo ) => (
+						<Project key={projectInfo.id}
+							title={projectInfo.title}
+							imageName={projectInfo.imageName}
+							liveURL={projectInfo.liveURL}
+							repoURL={projectInfo.repoURL}
+						/>
+					) )}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 }

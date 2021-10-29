@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Header from '../components/Header';
 
 export default function Contact() {
 
@@ -58,51 +59,54 @@ export default function Contact() {
 	};
 
 	return (
-		<div className="page-section">
-			<h2 className="lines">Contact</h2>
-			<form className="form">
-				<label htmlFor="name-entry">Name</label>
-				<input
-					id="name-entry"
-					value={visitorName}
-					name="visitorName"
-					onChange={handleInputChange}
-					onBlur={checkInput}
-					type="text"
-					placeholder="Your Name"
-				/>
-				<label htmlFor="email-entry">Email</label>
-				<input
-					id="email-entry"
-					value={visitorEmail}
-					name="visitorEmail"
-					onChange={handleInputChange}
-					onBlur={checkInput}
-					type="email"
-					placeholder="Your Email"
-				/>
-				<label htmlFor="message-entry">Message</label>
-				<textarea
-					id="message-entry"
-					value={visitorMessage}
-					name="visitorMessage"
-					onChange={handleInputChange}
-					onBlur={checkInput}
-					type="text"
-				/>
-				{( !validName && leftName ) &&
-					<h5>Please enter a valid name</h5>
-				}
-				{( !validEmail && leftEmail ) &&
-					<h5>Please enter a valid email</h5>
-				}
-				{( !validMessage && leftMessage ) &&
-					<h5>Please write a message to send</h5>
-				}
-				{( validName && validEmail && validMessage )
-					? <button type="submit">Send</button>
-					: <button type="submit" disabled>Send</button>}
-			</form>
-		</div>
+		<>
+			<Header/>
+			<div className="page-section">
+				<h2 className="lines">Contact</h2>
+				<form className="form">
+					<label htmlFor="name-entry">Name</label>
+					<input
+						id="name-entry"
+						value={visitorName}
+						name="visitorName"
+						onChange={handleInputChange}
+						onBlur={checkInput}
+						type="text"
+						placeholder="Your Name"
+					/>
+					<label htmlFor="email-entry">Email</label>
+					<input
+						id="email-entry"
+						value={visitorEmail}
+						name="visitorEmail"
+						onChange={handleInputChange}
+						onBlur={checkInput}
+						type="email"
+						placeholder="Your Email"
+					/>
+					<label htmlFor="message-entry">Message</label>
+					<textarea
+						id="message-entry"
+						value={visitorMessage}
+						name="visitorMessage"
+						onChange={handleInputChange}
+						onBlur={checkInput}
+						type="text"
+					/>
+					{( !validName && leftName ) &&
+						<h5>Please enter a valid name</h5>
+					}
+					{( !validEmail && leftEmail ) &&
+						<h5>Please enter a valid email</h5>
+					}
+					{( !validMessage && leftMessage ) &&
+						<h5>Please write a message to send</h5>
+					}
+					{( validName && validEmail && validMessage )
+						? <button type="submit">Send</button>
+						: <button type="submit" disabled>Send</button>}
+				</form>
+			</div>
+		</>
 	);
 }

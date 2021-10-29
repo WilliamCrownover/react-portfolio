@@ -1,6 +1,6 @@
 import Navigation from './Navigation';
 
-export default function Header( { currentPage, handlePageChange } ) {
+export default function Header() {
 
 	return (
 		<header>
@@ -8,7 +8,7 @@ export default function Header( { currentPage, handlePageChange } ) {
 				<h1>William Crownover</h1>
 				<p className="pHeader">Portfolio built with React</p>
 			</div>
-			<Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
+			<Navigation/>
 		</header>
 	);
 }

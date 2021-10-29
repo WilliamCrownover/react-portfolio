@@ -25,9 +25,8 @@ const pageNames = [
 	}
 ];
 
-export default function Navigation( { currentPage, handlePageChange } ) {
+export default function Navigation() {
 	const [state, dispatch] = usePortfolioContext();
-	console.log(state.currentPage);
 
 	return (
 		<ul className="nav-tabs">
