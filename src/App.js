@@ -1,4 +1,4 @@
-import PortfolioPages from './components/PortfolioPages';
+import PortfolioPages from './pages/PortfolioPages';
 
 function App() {
 	return (

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import Footer from './Footer';
-import Header from './Header';
-import AboutMe from './pages/AboutMe';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
+import Portfolio from './Portfolio';
+import Resume from './Resume';
 
 export default function PortfolioPages() {
 	const [currentPage, setCurrentPage] = useState( 'About Me' );
