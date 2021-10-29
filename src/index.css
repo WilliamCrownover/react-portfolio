@@ -26,10 +26,17 @@ header {
 
 h1 {
   margin-left: 30px;
+  margin-bottom: 0;
   color: var(--cloudWhite);
   font-family: 'Kanit', sans-serif;
   font-size: 2.2rem;
   font-weight: 400;
+}
+
+.pHeader {
+  margin-left: 35px;
+  margin-bottom: 15px;
+  color: var(--cloudBlue);
 }
 
 .nav-tabs {

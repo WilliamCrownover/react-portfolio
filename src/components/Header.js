@@ -4,7 +4,10 @@ export default function Header( { currentPage, handlePageChange } ) {
 
 	return (
 		<header>
-			<h1>William Crownover</h1>
+			<div>
+				<h1>William Crownover</h1>
+				<p className="pHeader">Portfolio built with React</p>
+			</div>
 			<Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
 		</header>
 	);
