@@ -7,6 +7,7 @@
   --blueMain: #265c69;
   --blueMainHover: #2b6877;
   --cloudWhite: #f2f4f1;
+  --cloudWhiteActive: #eaebe9;
   --coalBlack: #1b222f;
   --cloudBlue: #a6adbd;
   --iceyWaters: #4e5460;
@@ -142,10 +143,12 @@ p {
 
 .accord-title {
   display: flex;
+  position: relative;
   justify-content: space-between;
   background-color: var(--blueMain);
   padding: 0 20px;
   border-radius: 6px 6px 0 0;
+  z-index: 2;
   box-shadow:
     0 0 0 rgb(0 0 0 / 0%),
     0 0 0 rgb(0 0 0 / 0%);
@@ -158,7 +161,6 @@ p {
     3px 3px 6px rgb(0 0 0 / 33%),
     -3px -3px 6px rgb(255 255 255 / 25%);
   transition: box-shadow var(--shadowAnimateSpeed);
-
 }
 
 h3 {
@@ -167,11 +169,13 @@ h3 {
 }
 
 .accord-content {
+  background-color: var(--cloudWhiteActive);
   box-shadow:
     inset 6px 6px 12px rgb(0 0 0 / 20%),
     inset -6px -6px 12px rgb(255 255 255 / 5%);
-    padding: 20px 0 10px 0;
-    border-radius: 0 0 6px 6px;
+  padding: 20px 0 10px 0;
+  border-radius: 0 0 6px 6px;
+  z-index: 1;
 }
 
 .proficient-list {
