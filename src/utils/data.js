@@ -21,7 +21,7 @@ export const pageNames = [
 	}
 ];
 
-export const skills = [
+export const allSkills = [
 	{
 		title: 'Front-end Proficiencies',
 		list: [

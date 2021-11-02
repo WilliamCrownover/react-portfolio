@@ -2,6 +2,7 @@
 
 import Accordion from "../components/Accordion";
 import Header from "../components/Header";
+import { allSkills } from "../utils/data";
 
 export default function AboutMe() {
 
@@ -23,8 +24,12 @@ export default function AboutMe() {
 					</p>
 				</div>
 				<div className='accord-flex'>
-					<Accordion/>
-					<Accordion/>
+					{allSkills.map( ( skills ) => (
+						<Accordion
+							title={skills.title}
+							list={skills.list}
+						/>
+					) )}
 				</div>
 			</div>
 		</>
