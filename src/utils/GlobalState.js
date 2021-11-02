@@ -6,7 +6,7 @@ const { Provider } = PortfolioContext;
 
 const PortfolioProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = usePortfolioReducer({
-    currentPage: 'AboutMe',
+    currentPage: 'About Me',
   });
 
   return <Provider value={[state, dispatch]} {...props} />;
