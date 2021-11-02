@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 
+import Accordion from "../components/Accordion";
 import Header from "../components/Header";
 
 export default function AboutMe() {
@@ -20,6 +21,10 @@ export default function AboutMe() {
 						present new intriguing patterns. I am thrilled to bring my knowledge and creativity to an inspirational
 						team of developers looking to captivate knowledge seekers across the web.
 					</p>
+				</div>
+				<div className='accord-flex'>
+					<Accordion/>
+					<Accordion/>
 				</div>
 			</div>
 		</>

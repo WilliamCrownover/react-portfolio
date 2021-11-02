@@ -4,8 +4,8 @@
 }
 
 :root {
-  --rustBrown: #265c69;
-  --rockLight: #a8927f;
+  --blueMain: #265c69;
+  --blueMainHover: #2b6877;
   --cloudWhite: #f2f4f1;
   --coalBlack: #1b222f;
   --cloudBlue: #a6adbd;
@@ -20,7 +20,7 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--rustBrown);
+  background-color: var(--blueMain);
   box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
 }
 
@@ -46,6 +46,7 @@ h1 {
 
 li {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .nav-link {
@@ -112,6 +113,7 @@ h2 {
 .about-me-flex {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .profile-pic {
@@ -127,6 +129,53 @@ p {
   margin-left: 30px;
   line-height: 1.8;
   text-align: justify;
+}
+
+.accord-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accord-section {
+  width: calc(50% - 10px);
+}
+
+.accord-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blueMain);
+  padding: 0 20px;
+  border-radius: 6px 6px 0 0;
+  box-shadow:
+    0 0 0 rgb(0 0 0 / 0%),
+    0 0 0 rgb(0 0 0 / 0%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.accord-title:hover {
+  background-color: var(--blueMainHover);
+  box-shadow:
+    3px 3px 6px rgb(0 0 0 / 33%),
+    -3px -3px 6px rgb(255 255 255 / 25%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+
+}
+
+h3 {
+  color: var(--cloudWhite);
+
+}
+
+.accord-content {
+  box-shadow:
+    inset 6px 6px 12px rgb(0 0 0 / 20%),
+    inset -6px -6px 12px rgb(255 255 255 / 5%);
+    padding: 20px 0 10px 0;
+    border-radius: 0 0 6px 6px;
+}
+
+.proficient-list {
+  margin: 0;
 }
 
 h4 {
@@ -215,7 +264,7 @@ h5 {
 
 button {
   margin-top: 20px;
-  background-color: var(--rustBrown);
+  background-color: var(--blueMain);
   color: var(--cloudWhite);
   padding: 10px 20px;
   border: none;
@@ -266,7 +315,7 @@ footer {
 }
 
 footer a {
-  color: var(--rustBrown);
+  color: var(--blueMain);
   margin: 30px 30px;
   transition: color var(--shadowAnimateSpeed);
 }
