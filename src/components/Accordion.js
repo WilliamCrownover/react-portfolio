@@ -16,7 +16,7 @@ export default function Accordion( {title, list}) {
 				<div className='accord-content'>
 					<ul className="proficient-list">
 						{list.map( ( skill ) => (
-							<li>{skill}</li>
+							<li key={skill} >{skill}</li>
 						))}
 					</ul>
 				</div>

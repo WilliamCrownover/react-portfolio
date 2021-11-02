@@ -26,6 +26,7 @@ export default function AboutMe() {
 				<div className='accord-flex'>
 					{allSkills.map( ( skills ) => (
 						<Accordion
+							key={skills.title}
 							title={skills.title}
 							list={skills.list}
 						/>
