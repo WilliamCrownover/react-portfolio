@@ -23,6 +23,7 @@ export default function AboutMe() {
 						team of developers looking to captivate knowledge seekers across the web.
 					</p>
 				</div>
+				<h2 className="lines">Skills</h2>
 				<div className='accord-flex'>
 					{allSkills.map( ( skills ) => (
 						<Accordion

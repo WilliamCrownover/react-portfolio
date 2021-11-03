@@ -10,7 +10,7 @@ export default function Accordion( {title, list}) {
 				onClick={() => setIsActive(!isActive)}
 			>
 				<h3>{title}</h3>
-				<h3>{isActive ? 'v' : '>' }</h3>
+				<h3 className='accord-toggle'>{isActive ? 'v' : '>' }</h3>
 			</div>
 			{isActive &&
 				<div className='accord-content'>
