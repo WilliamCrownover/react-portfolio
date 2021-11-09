@@ -127,6 +127,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .eslintrc.json
+.X.eslintrc.json
 .stylelintrc.json
 .env
 .DS_Store

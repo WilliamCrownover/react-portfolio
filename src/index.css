@@ -4,9 +4,10 @@
 }
 
 :root {
-  --rustBrown: #265c69;
-  --rockLight: #a8927f;
+  --blueMain: #265c69;
+  --blueMainHover: #2b6877;
   --cloudWhite: #f2f4f1;
+  --cloudWhiteActive: #eaebe9;
   --coalBlack: #1b222f;
   --cloudBlue: #a6adbd;
   --iceyWaters: #4e5460;
@@ -20,16 +21,23 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--rustBrown);
+  background-color: var(--blueMain);
   box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
 }
 
 h1 {
   margin-left: 30px;
+  margin-bottom: 0;
   color: var(--cloudWhite);
   font-family: 'Kanit', sans-serif;
   font-size: 2.2rem;
   font-weight: 400;
+}
+
+.pHeader {
+  margin-left: 35px;
+  margin-bottom: 15px;
+  color: var(--cloudBlue);
 }
 
 .nav-tabs {
@@ -39,11 +47,12 @@ h1 {
 
 li {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .nav-link {
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 10px;
   color: var(--cloudWhite);
   padding: 15px;
   border-radius: 5px;
@@ -83,7 +92,8 @@ li {
 }
 
 .page-section {
-  margin: 50px auto;
+  margin: 70px auto;
+  margin-bottom: 10px;
   padding: 0 50px;
   max-width: 1000px;
 }
@@ -94,7 +104,8 @@ h2 {
   font-size: 2rem;
   font-weight: 400;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 10px;
 }
 
 .lines {
@@ -105,6 +116,7 @@ h2 {
 .about-me-flex {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .profile-pic {
@@ -122,14 +134,84 @@ p {
   text-align: justify;
 }
 
+.accord-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.accord-section {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.accord-title,
+.project-title {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blueMain);
+  padding: 0 20px;
+  border-radius: 6px;
+  z-index: 2;
+  box-shadow:
+    0 0 0 rgb(0 0 0 / 0%),
+    0 0 0 rgb(0 0 0 / 0%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.accord-active {
+  border-radius: 6px 6px 0 0;
+}
+
+.accord-title:hover {
+  background-color: var(--blueMainHover);
+  box-shadow:
+    3px 3px 6px rgb(0 0 0 / 33%),
+    -3px -3px 6px rgb(255 255 255 / 25%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+h3 {
+  color: var(--cloudWhite);
+  text-align: center;
+}
+
+.accord-toggle {
+  background-color: var(--cloudWhite);
+  color: var(--blueMain);
+  border-radius: 100%;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.accord-content,
+.project-info-card {
+  background-color: var(--cloudWhiteActive);
+  box-shadow:
+    inset 6px 6px 12px rgb(0 0 0 / 20%),
+    inset -6px -6px 12px rgb(255 255 255 / 5%);
+  padding: 20px 0 10px 0;
+  border-radius: 0 0 6px 6px;
+  z-index: 1;
+}
+
+.proficient-list {
+  margin: 0;
+  padding-right: 40px;
+}
+
 h4 {
   color: var(--coalBlack);
   font-family: 'Kanit', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
   padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
 }
 
 .all-projects-container {
@@ -141,11 +223,13 @@ h4 {
 
 .project-card {
   margin-bottom: 70px;
-  flex: 0 0 45%;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-image-btns {
-  flex: 0 1 100%;
+  flex: 0 1 45%;
 }
 
 img {
@@ -153,6 +237,7 @@ img {
   box-shadow:
     3px 3px 6px rgb(0 0 0 / 33%),
     -3px -3px 6px rgb(255 255 255 / 100%);
+  margin-top: 20px;
 }
 
 .project-btn-wrapper {
@@ -185,6 +270,31 @@ img {
   background-color: var(--coalBlack);
 }
 
+.project-info-card {
+  flex: 0 1 53%;
+  padding-right: 30px;
+  border-radius: 6px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.project-info-card p {
+  line-height: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.contact-box {
+  margin-bottom: 50px;
+}
+
+.contact-box p {
+  margin: 0;
+  text-align: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -208,7 +318,7 @@ h5 {
 
 button {
   margin-top: 20px;
-  background-color: var(--rustBrown);
+  background-color: var(--blueMain);
   color: var(--cloudWhite);
   padding: 10px 20px;
   border: none;
@@ -240,10 +350,6 @@ button:active {
   color: var(--cloudWhite);
 }
 
-h3 {
-  text-align: center;
-}
-
 .flex-lists {
   display: flex;
   justify-content: space-evenly;
@@ -256,10 +362,12 @@ h3 {
 footer {
   display: flex;
   justify-content: center;
+  border-top: 3px solid var(--iceyWaters);
+  margin-top: 20px;
 }
 
 footer a {
-  color: var(--rustBrown);
+  color: var(--blueMain);
   margin: 30px 30px;
   transition: color var(--shadowAnimateSpeed);
 }
@@ -269,28 +377,78 @@ footer a:hover {
   transition: color var(--shadowAnimateSpeed);
 }
 
+.resume-btn {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.resume-btn h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Media Queries */
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 835px) {
   header {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   h1 {
-    margin: 0.67em auto;
-    width: 100%;
-    text-align: center;
+    font-size: 2.2rem;
+    margin: 20px 30px auto 30px;
   }
 
-  .nav-tabs {
-    margin: 10px auto;
-    margin-bottom: 40px;
-    padding: 0;
+  .accord-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .accord-section {
+    flex: 0 1 70%;
+  }
+
+  .pHeader {
+    margin: 0 auto 15px auto;
+    text-align: center;
+    color: var(--cloudBlue);
+  }
+
+  .project-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-image-btns {
+    flex: 0 1 70%;
+    margin-bottom: 20px;
+  }
+
+  .project-info-card {
+    flex: 0 1 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+    margin: 20px auto auto auto;
+  }
+
+  h2 {
+    margin: 30px auto;
+    margin-top: 0;
+  }
+
   .about-me-flex {
     display: block;
+  }
+
+  .nav-tabs {
+    padding: 0;
   }
 
   .nav-link {
@@ -300,6 +458,7 @@ footer a:hover {
   }
 
   .page-section {
+    margin-top: 30px;
     padding: 0 20px;
   }
 
@@ -313,9 +472,36 @@ footer a:hover {
     margin-top: 30px;
   }
 
+  .accord-flex {
+    flex-wrap: wrap;
+  }
+
+  .accord-section {
+    flex: 0 1 100%;
+  }
+
+  .pHeader {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--cloudBlue);
+  }
+
   .project-card {
     flex: 0 0 100%;
     margin-bottom: 20px;
+  }
+
+  .project-image-btns {
+    flex: 0 1 100%;
+  }
+
+  .project-info-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .project-info-card p {
+    margin-top: 0;
   }
 
   .form textarea,

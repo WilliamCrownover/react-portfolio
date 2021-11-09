@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faVimeo } from '@fortawesome/free-brands-svg-icons';
+// import { faVimeo } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
 
@@ -13,9 +13,9 @@ export default function Footer() {
 			<a href="https://www.linkedin.com/in/williamcrownover/" target="_blank" rel="noreferrer">
 				<FontAwesomeIcon icon={faLinkedin} size="3x" />
 			</a>
-			<a href="https://vimeo.com/user12491647" target="_blank" rel="noreferrer">
+			{/* <a href="https://vimeo.com/user12491647" target="_blank" rel="noreferrer">
 				<FontAwesomeIcon icon={faVimeo} size="3x" />
-			</a>
+			</a> */}
 		</footer>
 	);
 }
