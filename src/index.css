@@ -145,7 +145,8 @@ p {
   margin-bottom: 20px;
 }
 
-.accord-title {
+.accord-title,
+.project-title {
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -219,11 +220,13 @@ h4 {
 
 .project-card {
   margin-bottom: 70px;
-  flex: 0 0 45%;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-image-btns {
-  flex: 0 1 100%;
+  flex: 0 1 45%;
 }
 
 img {
@@ -231,6 +234,7 @@ img {
   box-shadow:
     3px 3px 6px rgb(0 0 0 / 33%),
     -3px -3px 6px rgb(255 255 255 / 100%);
+  margin-top: 20px;
 }
 
 .project-btn-wrapper {
