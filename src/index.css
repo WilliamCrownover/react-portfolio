@@ -384,13 +384,32 @@ footer a:hover {
     margin: 0 auto 15px auto;
     text-align: center;
     color: var(--cloudBlue);
-  }  
+  }
+
+  .project-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-image-btns {
+    flex: 0 1 70%;
+    margin-bottom: 20px;
+  }
+
+  .project-info-card {
+    flex: 0 1 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2.2rem;
     margin: 20px auto auto auto;
+  }
+
+  h2 {
+    margin: 30px auto;
+    margin-top: 0;
   }
 
   .about-me-flex {
@@ -408,6 +427,7 @@ footer a:hover {
   }
 
   .page-section {
+    margin-top: 30px;
     padding: 0 20px;
   }
 
@@ -430,6 +450,19 @@ footer a:hover {
   .project-card {
     flex: 0 0 100%;
     margin-bottom: 20px;
+  }
+
+  .project-image-btns {
+    flex: 0 1 100%;
+  }
+
+  .project-info-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .project-info-card p {
+    margin-top: 0;
   }
 
   .form textarea,
