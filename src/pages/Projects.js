@@ -10,7 +10,7 @@ export default function Projects() {
 			<div className="page-section">
 				<h2 className="lines">Collaborative</h2>
 				<div className="all-projects-container">
-					{allProjectInfo.filter(projectInfo => projectInfo.id < 4).map( ( projectInfo ) => (
+					{allProjectInfo.filter( projectInfo => projectInfo.id < 4 ).map( ( projectInfo ) => (
 						<Project key={projectInfo.id}
 							title={projectInfo.title}
 							imageName={projectInfo.imageName}
@@ -26,7 +26,7 @@ export default function Projects() {
 				</div>
 				<h2 className="lines">Independent</h2>
 				<div className="all-projects-container">
-					{allProjectInfo.filter(projectInfo => projectInfo.id > 3).map( ( projectInfo ) => (
+					{allProjectInfo.filter( projectInfo => projectInfo.id > 3 ).map( ( projectInfo ) => (
 						<Project key={projectInfo.id}
 							title={projectInfo.title}
 							imageName={projectInfo.imageName}

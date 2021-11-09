@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 
-import Accordion from "../components/Accordion";
-import Header from "../components/Header";
-import { allSkills } from "../utils/data";
+import Accordion from '../components/Accordion';
+import Header from '../components/Header';
+import { allSkills } from '../utils/data';
 
 export default function AboutMe() {
 

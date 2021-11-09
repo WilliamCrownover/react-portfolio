@@ -1,21 +1,21 @@
 import { useReducer } from 'react';
 import {
-  UPDATE_PAGE,
+	UPDATE_PAGE,
 } from './actions';
 
-export const reducer = (state, action) => {
-  switch (action.type) {
-    case UPDATE_PAGE:
-      return {
-        ...state,
-        currentPage: action.currentPage,
-      };
+export const reducer = ( state, action ) => {
+	switch ( action.type ) {
+	case UPDATE_PAGE:
+		return {
+			...state,
+			currentPage: action.currentPage,
+		};
 
-    default:
-      return state;
-  }
+	default:
+		return state;
+	}
 };
 
-export function usePortfolioReducer(initialState) {
-  return useReducer(reducer, initialState);
+export function usePortfolioReducer( initialState ) {
+	return useReducer( reducer, initialState );
 }

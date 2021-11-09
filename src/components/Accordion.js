@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-export default function Accordion( {title, list}) {
-	const [isActive, setIsActive] = useState(false);
+export default function Accordion( { title, list } ) {
+	const [isActive, setIsActive] = useState( false );
 
 	return (
 		<div className='accord-section'>
-			<div 
+			<div
 				className={`accord-title ${isActive ? 'accord-active' : ''}`}
-				onClick={() => setIsActive(!isActive)}
+				onClick={() => setIsActive( !isActive )}
 			>
 				<h3>{title}</h3>
 				<h3 className='accord-toggle'>{isActive ? 'v' : '>' }</h3>
@@ -17,7 +17,7 @@ export default function Accordion( {title, list}) {
 					<ul className="proficient-list">
 						{list.map( ( skill ) => (
 							<li key={skill} >{skill}</li>
-						))}
+						) )}
 					</ul>
 				</div>
 			}
