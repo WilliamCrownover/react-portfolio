@@ -382,10 +382,11 @@ footer a:hover {
 }
 
 .resume-btn {
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  padding: 0;
 }
 
 .resume-btn h3 {
