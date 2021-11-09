@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-export default function Project( { title, imageName, liveURL, repoURL } ) {
+export default function Project( { title, imageName, goal, role, concepts, tech, liveURL, repoURL, guestAccount } ) {
 
 	return (
 		<div className="project-card">
@@ -17,7 +17,15 @@ export default function Project( { title, imageName, liveURL, repoURL } ) {
 				</div>
 			</div>
 			<div className="project-info-card">
-				<p>Testing text</p>
+				<p><span className="heading">GOAL:</span> {goal}</p>
+				{role &&
+					<p><span className="heading">ROLE:</span> {role}</p>
+				}
+				<p><span className="heading">CONCEPTS:</span> {concepts}</p>
+				<p><span className="heading">TECHNOLOGIES:</span> {tech}</p>
+				{guestAccount &&
+					<p>Guest Account Info {guestAccount}</p>
+				}
 			</div>
 		</div>
 	);
