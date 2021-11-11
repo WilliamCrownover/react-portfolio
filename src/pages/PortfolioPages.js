@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
 import Resume from './Resume';
+import Welcome from './Welcome';
 
 export default function PortfolioPages() {
 
@@ -16,10 +17,10 @@ export default function PortfolioPages() {
 					<Route exact path='/react-portfolio/projects' component={Projects} />
 					<Route exact path='/react-portfolio/contact' component={Contact} />
 					<Route exact path='/react-portfolio/resume' component={Resume} />
-					<Route path='/' component={AboutMe} />
+					<Route path='/' component={Welcome} />
 				</Switch>
 			</Router>
-			<Footer/>
+			{/* <Footer/> */}
 		</>
 	);
 }
