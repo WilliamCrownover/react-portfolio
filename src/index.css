@@ -11,7 +11,9 @@
   --coalBlack: #1b222f;
   --cloudBlue: #a6adbd;
   --iceyWaters: #4e5460;
+  --welcomeGreen: #0fa03b;
   --shadowAnimateSpeed: 0.6s;
+  --gap: 85%;
 }
 
 html {
@@ -388,6 +390,53 @@ footer a:hover {
 .resume-btn h3 {
   margin-left: auto;
   margin-right: auto;
+}
+
+.welcome-btn,
+.w-1,
+.w-2 {
+  background-color: var(--welcomeGreen);
+}
+
+.w-1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-2 {
+  width: var(--gap);
+  height: var(--gap);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: var(--gap);
+  height: var(--gap);
+  background-color: var(--welcomeGreen);
+}
+
+.welcome-btn:hover,
+.w-1:hover,
+.w-2:hover {
+  box-shadow:
+    3px 3px 6px rgb(0 0 0 / 33%),
+    -3px -3px 6px rgb(255 255 255 / 25%);
+  transition: box-shadow var(--shadowAnimateSpeed);
+}
+
+.welcome-btn h4 {
+  display: inline-block;
+  padding: 0;
 }
 
 /* Media Queries */
