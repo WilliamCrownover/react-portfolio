@@ -25,34 +25,34 @@ export const allSkills = [
 	{
 		title: 'Front-end Proficiencies',
 		list: [
-			'HTML5',
-			'CSS3',
+			'React.js',
+			'Redux.js',
 			'JavaScript ES6',
 			'jQuery',
 			'Handlebars.js',
-			'React.js'
+			'CSS3',
+			'HTML5',
 		]
 	},
 	{
 		title: 'Back-end Proficiencies',
 		list: [
+			'GraphQL',
 			'Node.js',
 			'Express.js',
-			'MySQL2',
-			'Sequelize.js',
 			'MongoDB',
 			'MongooseODM',
-			'Redux.js',
-			'GraphQL'
+			'MySQL2',
+			'Sequelize.js',
 		]
 	},
 	{
 		title: 'Full-stack Methodologies',
 		list: [
-			'Git Version Control',
+			'MERN Stack',
 			'Agile Development',
 			'MVC Paradigm',
-			'MERN Stack'
+			'Git Version Control',
 		]
 	},
 	{
