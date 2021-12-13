@@ -116,6 +116,16 @@ export const allProjectInfo = [
 	},
 	{
 		id: 4,
+        title: 'QGB Therapy',
+        imageName: 'qgb.jpg',
+        goal: 'This professional website was built as a single-page React.js app to expand the web presence of Dr. Quintin Bailey. Using React components for the pages and elements, the website is completely mobile responsive. I designed custom CSS to maintain precise control over the look of the pages. New patients are able to submit a google form embedded into the contact page.',
+        concepts: 'Single-page App, React Components, JSX, Custom CSS',
+        tech: 'React, CSS, Node',
+        liveURL: 'https://qgbtherapy.com/',
+        repoURL: 'https://github.com/WilliamCrownover/qgb-therapy'
+	},
+	{
+		id: 5,
 		title: 'Weather Forecast Dashboard',
 		imageName: 'wfd.jpg',
 		goal: 'This web application was designed as a quick way to look up the current and five day weather forecast for various cities around the world and compare the results between past city searches. The 3rd party API used for the weather data comes from OpenWeather. The UV index and forecast background colors are presented in response to the data so that the user on a glimpse can see how intense the UV light is and if the week will be cold or hot.',
@@ -125,7 +135,7 @@ export const allProjectInfo = [
 		repoURL: 'https://github.com/WilliamCrownover/weather-forecast-dashboard'
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'Tech Blog Forum',
 		imageName: 'tbf.jpg',
 		goal: 'This full-stack web app was built as a blog/forum style site to host discussions on the latest in developer tech news and opinions. The website handles user account creation securely using bcrypt to hash passwords and once a user is validated they can interact with the forum by creating blog posts of their own or adding comments to past posts.',
@@ -136,7 +146,7 @@ export const allProjectInfo = [
 		guestAccount: '- guest - password123'
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Javascript Coding Quiz',
 		imageName: 'jsq.jpg',
 		goal: 'This website is designed to be an interactive quiz game with the focus of the questions being JavaScript fundamentals. I built this project to help reinforce the foundations of JavaScript and be a helpful tool for programming students to gauge their learning progress.',
